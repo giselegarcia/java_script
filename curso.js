@@ -7,8 +7,8 @@ console.log("Meu nome é: " + nome + " e eu estou assistindo essa aula ás " + c
 // Função com Array Filter
 const numeros = [2, 6, 90, 180, 340, 500, 680, 1000];
 
-function numerosFilter(valor){
-    return valor < 180
-}
-resultado = numeros.filter(numerosFilter);
+resultado = numeros.filter((valor, indice, array)=> {
+    //console.log(valor, indice, array);
+    return valor < 180;
+});
 console.log(resultado);
